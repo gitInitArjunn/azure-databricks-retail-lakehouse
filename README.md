@@ -9,23 +9,23 @@ End-to-end lakehouse project built on **Azure Databricks**, demonstrating:
 
 ## 🏗️ Project Structure
 
-azure-databricks-retail-lakehouse/
-├─ src/                        # All your Databricks jobs/notebooks
-│   ├─ ingestion/              # Bronze: raw ingestion scripts
-│   ├─ transformations/        # Silver: cleaning + joins
-│   ├─ gold/                   # Gold: aggregates, business-ready tables
-│   └─ ml/                     # Machine learning (forecasting/pricing)
-├─ infra/                      # Infrastructure & config
-│   ├─ unity_catalog_setup.sql # Catalog & schema creation
-│   └─ storage_config.json     # Storage mount/config details
-├─ jobs/                       # Workflow/job JSON definitions
-│   └─ workflows.json
-├─ dbsql/                      # SQL queries & dashboard notes
-│   └─ dashboards.md
-├─ tests/                      # Unit tests for PySpark transforms
-│   └─ test_transforms.py
-├─ data/                       # Only small local test CSVs (not prod data)
-├─ README.md                   # Project overview
+azure-databricks-retail-lakehouse/  
+├─ src/  
+│  ├─ ingestion/  
+│  ├─ transformations/  
+│  ├─ gold/  
+│  └─ ml/  
+├─ infra/  
+│  ├─ unity_catalog_setup.sql  
+│  └─ storage_config.json  
+├─ jobs/  
+│  └─ workflows.json  
+├─ dbsql/  
+│  └─ dashboards.md  
+├─ tests/  
+│  └─ test_transforms.py  
+├─ data/  
+└─ README.md
 
 ## 🚀 Tech Stack
 - Azure Databricks
