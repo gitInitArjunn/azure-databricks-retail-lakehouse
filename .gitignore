@@ -1,6 +1,8 @@
 __pycache__/
-.idea/
-.vscode/
-.DS_Store
-*.dbc
-*.dbc.zip
+*.pyc
+*.ipynb_checkpoints
+.env
+.venv
+dbfs/
+.databricks/
+data/*.csv   # Prevents big dataset files being pushed
