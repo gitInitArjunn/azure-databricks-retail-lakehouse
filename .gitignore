@@ -5,3 +5,5 @@ __pycache__/
 *.dbc
 *.dbc.zip
 venv/
+pytest_cache/
+pytest.ini
