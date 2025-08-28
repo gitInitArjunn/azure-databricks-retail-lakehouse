@@ -1,15 +1,6 @@
 # process.py
 
 from pyspark.sql import SparkSession, functions as F
-
-# -----------------------------
-# Initialize Spark session
-# -----------------------------
-spark = SparkSession.builder \
-    .appName("Gold Layer Validation") \
-    .getOrCreate()
-
-
 # -----------------------------
 # Null Check (all columns)
 # -----------------------------
@@ -69,10 +60,15 @@ def run_validation(train_gold, test_gold):
 # -----------------------------
 # Main execution
 # -----------------------------
-if __name__ == "__main__":
+def validate():
+    spark = SparkSession.builder \
+    .appName("Gold Layer Validation") \
+    .getOrCreate()
+
     # Load Gold tables
     train_gold = spark.table("retail_lakehouse.gold.sales_train")
     test_gold = spark.table("retail_lakehouse.gold.sales_test")
 
     # Run all validations
     run_validation(train_gold, test_gold)
+

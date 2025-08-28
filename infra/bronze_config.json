@@ -1,4 +1,4 @@
 {
   "storage_account_name": "initstoragearjunn",
-  "bronze_container": "retail-bronze"
+  "container_name": "retail-bronze"
 }
